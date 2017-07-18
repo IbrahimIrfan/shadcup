@@ -1,0 +1,246 @@
+/* Fonts */
+@keyframes initColourChange {
+    from {
+    -webkit-box-shadow: 0 8px 8px 0px #cacaca;
+    -moz-box-shadow: 0 8px 8px 0px #cacaca;
+    box-shadow: 0 8px 8px 0px #cacaca;
+  }
+    to {
+      -webkit-box-shadow: 0 8px 8px 3px #6c6c6c;
+      -moz-box-shadow: 0 8px 8px 3px #6c6c6c;
+      box-shadow: 0 8px 8px 3px #6c6c6c;
+  }
+}
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+/* Containers */
+
+.head {
+    min-height: 100vh !important;
+}
+.transition {
+    height: 50vh !important;
+}
+.bgimgWrapper {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.footer{
+  padding-bottom: 50px;
+  height: 30vh;
+}
+
+/* General Properties */
+
+body, h1 {
+    font-family: avenir !important;
+    line-height: normal !important;
+}
+h1{
+  font-size: 35px !important;
+  font-weight: bold !important;
+}
+.fadeIn {
+    opacity: 0;
+}
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.parallax img {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+::selection {
+    background: #ff0000 !important;
+}
+::-moz-selection {
+    background: #ff0000 !important;
+}
+.subtitle{
+  position: relative;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  color: #ff0000;
+  font-weight: 600;
+  font-size: 45px;
+}
+.fancyTitle{
+  color: #ff0000;
+}
+
+/* Backgrounds */
+.firstBG, .footerBG {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/rubble.jpg') no-repeat center center fixed;
+}
+
+/*'*/
+
+
+/* First section */
+
+#bgTitleText {
+    position: absolute;
+    color: white;
+    font-weight: 900;
+    font-size: 70px;
+    top: 100px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+}
+#stool{
+      position: absolute;
+      top: 100px;
+      padding-bottom: 50px;
+      padding-left: 300px;
+      border-radius: 50%;
+      width: 200px;
+}
+#HalcyonBlurb {
+    position: absolute;
+    color: white;
+    font-weight: 600;
+    font-size: 35px;
+    top: 150px;
+    width: 50%;
+    padding-left: 50px;
+    padding-top: 170px;
+}
+#downArrow:hover {
+    cursor: pointer;
+}
+#downArrowWrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.header {
+    background-color: white;
+    color: #ff0000;
+    font-weight: 600;
+    font-size: 45px;
+}
+#joinUsBlurb{
+  font-size: 20px;
+}
+#joinUsForm{
+  padding-top: 30px;
+}
+#joinPopup{
+  display: none;
+}
+#submit{
+  background-color: #FD5004 !important;
+  color: white !important;
+  width: 90%;
+}
+.features{
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 25px;
+}
+.featureIcon{
+  margin-bottom: 15px;
+  display: block;
+}
+td{
+
+  vertical-align: top;
+}
+
+/* Contact Us Section */
+
+#contactTitle {
+    position: relative;
+    font-size: 50px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding-top: 10vh;
+}
+.connectButton {
+    padding-top: 5vh;
+    position: absolute;
+    z-index: 5;
+}
+#facebookIcon {
+    padding-left: 30%;
+}
+#twitterIcon {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+#instaIcon {
+    right: 0;
+    padding-right: 30%;
+}
+#emailUs {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    padding-top: 25vh;
+}
+
+
+
+/* Our initiatives Section */
+.init {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    -webkit-box-shadow: 0 8px 8px 0px #cacaca;
+    -moz-box-shadow: 0 8px 8px 0px #cacaca;
+    box-shadow: 0 8px 8px 0px #cacaca;
+    margin-bottom: 50px;
+    vertical-align:top;
+}
+#cupInit{
+  margin-left: 10%;
+}
+#initDescWrapper{
+  height: 220px;
+}
+#initDesc{
+  margin-top: 35px;
+  margin-bottom: 25px;
+  font-size: 25px;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}
+#chaptersInit{
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.init:hover{
+    cursor: pointer;
+    animation-name: initColourChange;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation-fill-mode: forwards;
+}
