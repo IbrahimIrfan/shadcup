@@ -69,22 +69,22 @@ h1{
     transform: translateX(-50%);
 }
 ::selection {
-    background: #ff0000 !important;
+    background: rgba(#00ff19, 0.57) !important;
 }
 ::-moz-selection {
-    background: #ff0000 !important;
+    background: rgba(#00ff19, 0.57) !important;
 }
 .subtitle{
   position: relative;
   text-align: center;
   padding-top: 3vh;
   padding-bottom: 5vh;
-  color: #ff0000;
+  color: #33ff09;
   font-weight: 600;
   font-size: 45px;
 }
 .fancyTitle{
-  color: #ff0000;
+  color: #33ff09;
 }
 
 /* Backgrounds */
@@ -149,7 +149,7 @@ h1{
   display: none;
 }
 #submit{
-  background-color: #FD5004 !important;
+  background-color: #33ff09 !important;
   color: white !important;
   width: 90%;
 }

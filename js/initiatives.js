@@ -38,9 +38,9 @@ function capFirstLetter(string) {
 }
 
 var allInitiatives = [];
-cup = new Initiative("cup", "Small Business Package", "25 EMGChairs<br><br><span style='font-size:50px;'>$199.99</span><br>20% discount", "img/chair1.png");
-chapters = new Initiative("chapters", "Medium Business Package", "100 EMGChairs<br><br><span style='font-size:50px;'>$749.99</span><br>25% discount", "img/chair2.png");
-pitch = new Initiative("pitch", "Large Business Package", "500 EMGChairs<br><br><span style='font-size:50px;'>$3499.99</span><br>30% discount", "img/chair3.png");
+cup = new Initiative("cup", "Small Package", "Detail here<br><br><span style='font-size:50px;'>$9.99</span><br>20% discount", "img/chair1.png");
+chapters = new Initiative("chapters", "Medium Package", "Detail here<br><br><span style='font-size:50px;'>$99.99</span><br>25% discount", "img/chair2.png");
+pitch = new Initiative("pitch", "Large Package", "Detail here<br><br><span style='font-size:50px;'>$999.99</span><br>30% discount", "img/chair3.png");
 
 for (i = 0; i < allInitiatives.length; i++) {
     addInitiative(allInitiatives[i]);
