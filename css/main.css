@@ -206,41 +206,12 @@ td{
     padding-top: 25vh;
 }
 
+.initiatives{
+  height: 500px;
+}
 
-
-/* Our initiatives Section */
-.init {
-    display: inline-block;
-    width: 25%;
-    text-align: center;
-    -webkit-box-shadow: 0 8px 8px 0px #cacaca;
-    -moz-box-shadow: 0 8px 8px 0px #cacaca;
-    box-shadow: 0 8px 8px 0px #cacaca;
-    margin-bottom: 50px;
-    vertical-align:top;
-}
-#cupInit{
-  margin-left: 10%;
-}
-#initDescWrapper{
-  height: 220px;
-}
-#initDesc{
-  margin-top: 35px;
-  margin-bottom: 25px;
-  font-size: 25px;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
-}
-#chaptersInit{
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
-.init:hover{
-    cursor: pointer;
-    animation-name: initColourChange;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
-    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
-    animation-fill-mode: forwards;
+@media screen and (max-width: 750px) {
+    #phonePic {
+        display: none;
+    }
 }
